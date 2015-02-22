@@ -4,7 +4,7 @@ angular.module('blogApp')
   .config(function ($stateProvider) {
     $stateProvider
       .state('posts', {
-        url: '/posts',
+        url: '/',
         templateUrl: 'app/posts/posts.html',
         controller: 'PostsCtrl'
       });
