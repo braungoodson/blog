@@ -1,3 +1,6 @@
-<div class="col-md-12">
-This is the posts.read view.
+<div class="container" ng-repeat="post in posts">
+  <h1 class="page-header">{{post.title}}</h1>
+  {{post.body}}
+  <br />
+  {{post.author.name}} {{post.dob}} {{post._id}}
 </div>
