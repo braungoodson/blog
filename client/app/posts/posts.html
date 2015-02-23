@@ -1,3 +1,7 @@
+<pre ng-show="$stateParams.d">params = {{$state.params}}
+url = {{$state.current.url}}
+$stateParams = {{$stateParams}}</pre>
+
 <div ng-include="'components/navbar/navbar.html'"></div>
 
 <!--header class="hero-unit" id="banner">
@@ -7,12 +11,6 @@
 </header-->
 
 <div ui-view=""></div>
-
-<br />
-
-<pre>params = {{$state.params}}
-url = {{$state.current.url}}
-$stateParams = {{$stateParams}}</pre>
 
 <footer class="footer">
   <div class="container">
