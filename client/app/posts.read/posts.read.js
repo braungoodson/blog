@@ -4,7 +4,7 @@ angular.module('blogApp')
   .config(function ($stateProvider) {
     $stateProvider
       .state('posts.read', {
-        url: '^/posts?v=',
+        url: '/read',
         templateUrl: 'app/posts.read/posts.read.html',
         controller: 'PostsReadCtrl'
       });

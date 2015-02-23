@@ -10,7 +10,7 @@ angular.module('blogApp', [
 ])
   .config(function ($stateProvider, $urlRouterProvider, $locationProvider, $httpProvider) {
     $urlRouterProvider
-      .otherwise('/posts?v=short');
+      .otherwise('/posts/read');
 
     $locationProvider.html5Mode(true);
     $httpProvider.interceptors.push('authInterceptor');

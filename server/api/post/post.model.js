@@ -4,9 +4,11 @@ var mongoose = require('mongoose'),
     Schema = mongoose.Schema;
 
 var PostSchema = new Schema({
-  name: String,
-  info: String,
-  active: Boolean
+  author: {type:Schema.ObjectId},
+  dob: {type:Date,default:Date.now},
+  title: String,
+  body: String,
+  publish: Boolean
 });
 
 module.exports = mongoose.model('Post', PostSchema);
