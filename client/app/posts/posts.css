@@ -1,0 +1,12 @@
+.navbar-default {
+  border: 0px;
+}
+.posts-banner-head {
+  height: 10px;
+  background: url(../../assets/images/banner.png);
+  opacity: .75;
+}
+.posts-footer {
+  background-color:#f8f8f8;
+  height:100%;
+}

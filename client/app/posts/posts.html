@@ -1,3 +1,4 @@
+<div class="posts-banner-head"></div>
 <pre ng-show="$stateParams.d">params = {{$state.params}}
 url = {{$state.current.url}}
 $stateParams = {{$stateParams}}</pre>
@@ -10,10 +11,16 @@ $stateParams = {{$stateParams}}</pre>
   </div>
 </header-->
 
-<div ui-view=""></div>
+<div class="posts-read" ui-view=""></div>
 
-<footer class="footer">
+<br />
+<br />
+<footer class="posts-footer">
+  <div class="posts-banner-head"></div>
   <div class="container">
-    <p>blog.blgse.com | <a href="https://twitter.com/compiletimelink">@compiletimelink</a> | <a href="https://github.com/braungoodson/blog/issues?state=open">Issues</a></p>
+    <br />
+    <center>
+      <p>blog.blgse.com | <a href="https://twitter.com/compiletimelink">@compiletimelink</a> | <a href="https://github.com/braungoodson/blog/issues?state=open">Issues</a></p>
+    </center>
   </div>
 </footer>
