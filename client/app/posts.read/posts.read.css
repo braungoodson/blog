@@ -1,0 +1,15 @@
+.post-title {
+  font-style: italic;
+  font-weight: bold;
+}
+.post-hr-content {
+  position: relative;
+  top:-31px;
+  background-color:white;
+  width:250px;
+  margin-left:auto;
+  margin-right:auto;
+}
+.semi-clear {
+  opacity: .5;
+}
