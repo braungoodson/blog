@@ -3,10 +3,14 @@
   font-style: italic;
   font-weight: bold;
 }
+.post-hr {
+  margin-bottom:16px;
+  border-top:5px solid #596a7b;
+}
 .post-hr-content {
   position: relative;
   top:-31px;
-  background-color:white;
+  background-color:rgb(43, 62, 80);
   width:250px;
   margin-left:auto;
   margin-right:auto;
