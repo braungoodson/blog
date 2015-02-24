@@ -1,4 +1,5 @@
 .post-title {
+  word-wrap: break-word;
   font-style: italic;
   font-weight: bold;
 }
