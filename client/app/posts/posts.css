@@ -2,7 +2,7 @@
   border: 0px;
 }
 .posts-banner-head {
-  height: 10px;
+  height: 15px;
   background: url(../../assets/images/banner-dark.png);
   opacity: .75;
   background-position-y: -123px;
@@ -17,7 +17,7 @@ height: 60px;
 background: red;
 -webkit-border-radius: 100%;
 position: absolute;
-top: 0px;
+top: 5px;
 left: 44%;
 z-index: 10000;
 background-color: rgb(235, 235, 235);
