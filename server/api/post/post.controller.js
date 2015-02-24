@@ -24,6 +24,7 @@ exports.show = function(req, res) {
 exports.create = function(req, res) {
   Post.create(req.body, function(err, post) {
     if(err) { return handleError(res, err); }
+    res.location('/posts/read');
     return res.json(201, post);
   });
 };

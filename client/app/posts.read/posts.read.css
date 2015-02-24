@@ -13,3 +13,6 @@
 .semi-clear {
   opacity: .5;
 }
+.post-body {
+  word-wrap: break-word;
+}

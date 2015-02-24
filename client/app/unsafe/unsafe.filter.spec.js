@@ -11,9 +11,8 @@ describe('Filter: unsafe', function () {
     unsafe = $filter('unsafe');
   }));
 
-  it('should return the input prefixed with "unsafe filter:"', function () {
-    var text = 'angularjs';
-    expect(unsafe(text)).toBe('unsafe filter: ' + text);
+  it('should return the function that unwraps html', function () {
+    expect(unsafe('')).not.toBe(undefined);
   });
 
 });

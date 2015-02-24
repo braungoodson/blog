@@ -7,8 +7,24 @@
 
 var Thing = require('../api/thing/thing.model');
 var User = require('../api/user/user.model');
+var Post = require('../api/post/post.model');
 
-Thing.find({}).remove(function() {
+//
+var crypto = require('crypto');
+var name = Math.random().toString();
+var title = crypto.createHash('md5').update(name).digest('hex');
+var body = '';
+for (var i = 0; i < 50; i++) {
+  body += crypto.createHash('md5').update(name).digest('hex') + '';
+}
+Post.create({
+  author: null,
+  title: title,
+  body: body,
+  publish: true
+});
+
+/*Thing.find({}).remove(function() {
   Thing.create({
     name : 'Development Tools',
     info : 'Integration with popular tools such as Bower, Grunt, Karma, Mocha, JSHint, Node Inspector, Livereload, Protractor, Jade, Stylus, Sass, CoffeeScript, and Less.'
@@ -46,4 +62,4 @@ User.find({}).remove(function() {
       console.log('finished populating users');
     }
   );
-});
+});*/

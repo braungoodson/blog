@@ -27,8 +27,7 @@ angular.module('blogApp')
       socket.unsyncUpdates('post');
     });
     function getAuthor(post) {
-      console.log(post);
-      $http.get('/api/users/'+post.author)
+      $http.get('/api/users/public/'+post.author)
         .success(function(author){
           post.author = author;
         })
@@ -37,7 +36,7 @@ angular.module('blogApp')
             name: 'Unknown'
           };
           $scope.error = error;
-          throw new Error(error);
+          console.warn(error);
         })
       ;
     }

@@ -4,6 +4,7 @@ describe('Controller: PostsReadCtrl', function () {
 
   // load the controller's module
   beforeEach(module('blogApp'));
+  beforeEach(module('socketMock'));
 
   var PostsReadCtrl, scope;
 
