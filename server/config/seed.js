@@ -13,10 +13,23 @@ var Post = require('../api/post/post.model');
 var crypto = require('crypto');
 var name = Math.random().toString();
 var title = crypto.createHash('md5').update(name).digest('hex');
-var body = '';
+var body = '<style>div#pony>p{text-indent:50px;}</style>';
+body += '<div id=\'pony\'>';
+body += '<p>'
+for (var i = 0; i < 25; i++) {
+  body += crypto.createHash('md5').update(name).digest('hex') + '';
+}
+body += '</p><p>'
 for (var i = 0; i < 50; i++) {
   body += crypto.createHash('md5').update(name).digest('hex') + '';
 }
+body += '</p><p>'
+for (var i = 0; i < 25; i++) {
+  body += crypto.createHash('md5').update(name).digest('hex') + '';
+}
+body += '</p>';
+body += '</div>';
+
 Post.create({
   author: null,
   title: title,
